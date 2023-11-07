@@ -11,13 +11,14 @@ eine stark abweichende Lösung erhält. Zum Beispiel hat ein Pendel eine instabi
 >[!info]- Grundsituation
 >$$y:[x_{0};\infty)\to \mathbb{R}^{n}\quad\text{Lsg. von}\quad y'=f(x,y)\qquad y_{0}:=y(x_{0})$$
 >$D\subset \mathbb{R}^{n}\times\mathbb{R}^{n} \text{ offen}, \quad f:D\to \mathbb{R}^{n}\in C^{1}$
-##### Die Lösung y "heißt":
+
+Die Lösung y "heißt":
 
 >[!check]- Def: "stabil"
->Wir gucken, ob in einem kleinen Bereich um unser $y_{0}$ die Lösung plötzlich extrem anders wird.
+>Wir gucken, ob in einem kleinen Bereich ($z_{0}$ um unser $y_{0}$) die Lösung plötzlich extrem anders wird.
 >$$\forall \epsilon>0\quad\exists\delta>0:\quad\forall z_{0}\in \mathbb{R}^{n}:$$
 >$$||y_{0}-z_{0}||<\delta\quad\Rightarrow\quad||y_{x_{0}y_{0}}(x)-y_{x_{0}z_{0}}||<\epsilon\quad\forall x\geq x_{0}$$
->Dies beschreibt die Stetigkeit des Lösungsoperators bzgl. $d_{sup}$
+>A.k.a. die Stetigkeit des _Lösungsoperators_ bzgl. $d_{sup}$
 
 >[!check]- Def: "attraktiv"
 

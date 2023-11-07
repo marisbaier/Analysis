@@ -6,7 +6,7 @@ tags:
 ### Asymptotik und Stabilität
 ---
 
-![alt text](Bilder/poincare_diagram.png "Title")
+![alt text](Bilder/poincare_diagram.png)
 >Stabilitätsdiagramm von #LAS (y'=Ay)
 
 ---

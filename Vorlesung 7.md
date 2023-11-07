@@ -14,4 +14,6 @@ $$y'=Ay \qquad y(0)=y_0$$
 >Falls $\forall \lambda:Re(\lambda)=?\quad\Rightarrow\quad\lambda\text{ halbeinfach}$
 >$$\Rightarrow \text{ dann}\quad\exists M:||e^{{Ax}}y_{0}||\leq M||y_{0}||e^{{-sx}}$$
 
-![[Pasted image 20231107213634.png]]
+![alt text](Bilder/poincare_diagram.png "Title")
+
+![[poincare_diagram.png]]

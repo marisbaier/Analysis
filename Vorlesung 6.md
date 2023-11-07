@@ -5,17 +5,29 @@ tags:
 ---
 ### Asymptotik und Stabilität
 ---
-Wir stellen uns die Frage, ob ein System (eine Differentialgleichung) 
-$$y'=Ay$$
-unter kleiner Änderung des Anfangswertes
-$$y(x_{0})\,\,!= y_{0}$$
+Wir stellen uns die Frage, ob ein System (eine Differentialgleichung) unter kleiner Änderung des Anfangswertes
+$$y(x_{0}):= y_{0}$$
 eine stark abweichende Lösung erhält. Zum Beispiel hat ein Pendel eine instabile Lösung, wenn es im Hochpunkt steht.
 
 ---
->[!info] Grundsituation
->$$y\text{Lsg. von }y'=f(x,y)\qquad y_{0}:=y(x_{0})$$
+>[!info]- Grundsituation
+>$$y:[x_{0};\infty)\to \mathbb{R}^{n}\quad\text{Lsg. von}\quad y'=f(x,y)\qquad y_{0}:=y(x_{0})$$
 >$D\subset \mathbb{R}^{n}\times\mathbb{R}^{n} \text{ offen}, \quad f:D\to \mathbb{R}^{n}\in C^{1}$
+###### Die Lösung y "heißt":
 
+>[!check]- Def: "stabil"
+>Wir gucken, ob in einem kleinen Bereich um unser $y_{0}$ die Lösung plötzlich extrem anders wird.
+>$$\forall \epsilon>0\quad\exists\delta>0:\quad\forall z_{0}\in \mathbb{R}^{n}:$$
+>$$||y_{0}-z_{0}||<\delta\quad\Rightarrow\quad||y_{x_{0}y_{0}}(x)-y_{x_{0}z_{0}}||<\epsilon\quad\forall x\geq x_{0}$$
+>Dies beschreibt die Stetigkeit des Lösungsoperators bzgl. $d_{sup}$
+
+>[!check]- Def: "attraktiv"
+
+>[!check]- Def: "asymptotisch stabil"
+
+>[!check]- Def: "exponentiell stabil"
+
+---
 
 ![alt text](Bilder/poincare_diagram.png)
 >Stabilitätsdiagramm von #LAS (y'=Ay)

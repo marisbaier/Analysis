@@ -8,6 +8,7 @@ tags:
 
 ![alt text](Bilder/poincare_diagram.png)
 >Stabilitätsdiagramm von #LAS (y'=Ay)
+>[Youtube-Video "Sketching phase portraits"](https://youtu.be/dpbRUQ-5YWc?si=RUVXktmzVDl8H8ZY)
 
 ---
 $D\subset \mathbb{R}^{n+1}$ offen, $f:D\to \mathbb{R}^{n} \in C^{1},x_{0}\in \mathbb{R}$

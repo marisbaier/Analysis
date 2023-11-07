@@ -13,3 +13,4 @@ $$\forall\epsilon>0\quad\exists\delta>0:\quad||y_{0}-z_{0}||<\delta\Rightarrow||
 - (f-) attraktiv (auf $[x_{0};\infty)$)
 $$\exists\delta>0:\quad||y_{0}-z_{0}||\Rightarrow y_{x_{0}z_{0}}\text{ ex auf }I$$
 - (f-) asymptotisch stabil $\Leftrightarrow$ stabil und attraktiv
+

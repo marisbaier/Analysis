@@ -13,3 +13,6 @@ $$y'=Ay \qquad y(0)=y_0$$
 >$$||e^{Ax}y_{0}||\leq M_{\omega}\,\, ||y_{0}||e^{{-\omega x}}\quad\forall\omega\in(s;0)$$
 >Falls $\forall \lambda:Re(\lambda)=?\quad\Rightarrow\quad\lambda\text{ halbeinfach}$
 >$$\Rightarrow \text{ dann}\quad\exists M:||e^{{Ax}}y_{0}||\leq M||y_{0}||e^{{-sx}}$$
+
+![[Fixed_Points.gif]]
+>Schematic visualization of 4 of the most common kinds of fixed points

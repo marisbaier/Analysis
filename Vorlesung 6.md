@@ -5,6 +5,17 @@ tags:
 ---
 ### Asymptotik und Stabilität
 ---
+Wir stellen uns die Frage, ob ein System (eine Differentialgleichung) 
+$$y'=Ay$$
+unter kleiner Änderung des Anfangswertes
+$$y(x_{0})\,\,!= y_{0}$$
+eine stark abweichende Lösung erhält. Zum Beispiel hat ein Pendel eine instabile Lösung, wenn es im Hochpunkt steht.
+
+---
+>[!info] Grundsituation
+>$$y\text{Lsg. von }y'=f(x,y)\qquad y_{0}:=y(x_{0})$$
+>$D\subset \mathbb{R}^{n}\times\mathbb{R}^{n} \text{ offen}, \quad f:D\to \mathbb{R}^{n}\in C^{1}$
+
 
 ![alt text](Bilder/poincare_diagram.png)
 >Stabilitätsdiagramm von #LAS (y'=Ay)

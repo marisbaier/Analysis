@@ -3,17 +3,15 @@ tags:
   - Stabilität
 ---
 ---
-### Asymptotik und Stabilität
----
 Wir stellen uns die Frage, ob ein System (eine Differentialgleichung) unter kleiner Änderung des Anfangswertes
 $$y(x_{0}):= y_{0}$$
-eine stark abweichende Lösung erhält. Zum Beispiel hat ein Pendel eine instabile Lösung, wenn es im Hochpunkt steht.
+eine stark abweichende Lösung erhält. Zum Beispiel hat ein Pendel eine instabile Lösung, wenn es im Hochpunkt steht (es erreicht bei kleiner Änderung von $y_{0}$ starke Änderung der Lösung - gemessen in der $d_{sup}$-Norm.
 
 ---
 >[!info]- Grundsituation
 >$$y:[x_{0};\infty)\to \mathbb{R}^{n}\quad\text{Lsg. von}\quad y'=f(x,y)\qquad y_{0}:=y(x_{0})$$
 >$D\subset \mathbb{R}^{n}\times\mathbb{R}^{n} \text{ offen}, \quad f:D\to \mathbb{R}^{n}\in C^{1}$
-###### Die Lösung y "heißt":
+##### Die Lösung y "heißt":
 
 >[!check]- Def: "stabil"
 >Wir gucken, ob in einem kleinen Bereich um unser $y_{0}$ die Lösung plötzlich extrem anders wird.

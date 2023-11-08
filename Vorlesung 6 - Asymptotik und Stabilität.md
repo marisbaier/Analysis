@@ -7,6 +7,7 @@ tags:
 Wir stellen uns die Frage, ob ein System (eine Differentialgleichung) unter kleiner Änderung des Anfangswertes
 $$y(x_{0}):= y_{0}$$
 eine stark abweichende Lösung erhält. Zum Beispiel hat ein Pendel eine instabile Lösung, wenn es im Hochpunkt steht (es erreicht bei kleiner Änderung von $y_{0}$ starke Änderung der Lösung - gemessen in der $d_{sup}$-Norm).
+hallo
 
 ---
 >[!info]- Grundsituation

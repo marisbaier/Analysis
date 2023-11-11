@@ -1,0 +1,40 @@
+{
+	"nodes":[
+		{"id":"1565ab9da9e931f4","type":"text","text":"# Gewöhnliche Differentialgleichungen (ODEs)\nWir suchen Lösungen $u:\\mathbb{R}\\rightarrow\\mathbb{R}^n$ von:\n$$\\boxed{u^{(m)}(t)=f(t,u(t),u'(t),...,u^{(m-1)}(t))}$$","x":-100,"y":-78,"width":573,"height":158,"color":"6"},
+		{"id":"f938b964fffe2374","type":"text","text":"#### ODEs höherer Ordnung $m\\gt1$","x":-500,"y":-24,"width":309,"height":50,"color":"4"},
+		{"id":"f6eed1bf2036b162","type":"text","text":"# Separation der Variablen\n\n>[!mot] Setting\n>Homogene DGL der Form: $$\\begin{align*}&u'=f(t,u)=g(t)h(u),\\\\[12pt]\n> &u(t_0)=u_0\\end{align*}$$mit integrierbaren Funktionen $f$ und $g$.\n\n>[!thm] Lösung\n>Seien $H,G$ Stammfkt. von $1/h$, $g$.\n>$$\\begin{align*}\n>&\\int_{u_0}^{u}\\frac{\\dd\\tilde u}{h(\\tilde u)}=\\int_{t_0}^{t}g(\\tilde t)\\dd\\tilde t\\\\[12pt]\n>\\Leftrightarrow\\,&H(u)=G(t)-G(t_0)+H(u_0)\\\\[12pt]\n>\\Leftrightarrow\\,&\\boxed{u(t)=H^{-1}(G(t)-G(t_0)+H(u_0))}\n>\\end{align*}$$\n\n","x":-460,"y":-1320,"width":400,"height":600,"color":"4"},
+		{"id":"62f43c06e10ba506","type":"text","text":"# Finden eines Potentials","x":21,"y":-1320,"width":332,"height":600,"color":"4"},
+		{"id":"2b0ed299b2982094","type":"text","text":"# Exaktisierung","x":520,"y":-880,"width":250,"height":340,"color":"4"},
+		{"id":"312241f3784d04e3","type":"text","text":"#### Homogene ODEs $m=1$","x":61,"y":-440,"width":252,"height":50,"color":"4"},
+		{"id":"c1c1ec8461965619","x":508,"y":-230,"width":274,"height":50,"color":"4","type":"text","text":"#### Inhomogene ODEs $m=1$"},
+		{"id":"7b8e0cc8a73d5f7b","x":522,"y":-338,"width":246,"height":53,"color":"4","type":"text","text":"#### Rate Partikulärlösung"},
+		{"id":"96be097f8912883e","type":"text","text":"#### ODEs erster Ordnung $m=1$","x":41,"y":-230,"width":291,"height":50,"color":"4"},
+		{"id":"54fb5fb50dbe9068","x":940,"y":-660,"width":347,"height":480,"color":"4","type":"text","text":"# Variation der Konstanten"},
+		{"id":"7e4685928e75a9a7","type":"text","text":"# Reduktion der Ordnung","x":-505,"y":-390,"width":320,"height":240,"color":"4"},
+		{"id":"6e8fd50b4f706508","type":"text","text":"# Exponentialansatz","x":-1140,"y":-24,"width":280,"height":50,"color":"4"},
+		{"id":"9aa783143459fc94","x":-560,"y":191,"width":286,"height":50,"color":"4","type":"text","text":"#### Systeme von ODEs (ODS)"},
+		{"id":"2cd8647aa216ae07","type":"text","text":"#### Existenz, Eindeutigkeit von Lösungen","x":-3,"y":280,"width":379,"height":60,"color":"1"},
+		{"id":"166e4903fa38ed0d","x":782,"y":-25,"width":271,"height":52,"color":"1","type":"text","text":"#### Stabilität von Lösungen"},
+		{"id":"9c43d3a2bbeff4ee","x":-553,"y":498,"width":273,"height":50,"color":"4","type":"text","text":"#### Lineare, autonome ODS"}
+	],
+	"edges":[
+		{"id":"8a573485e1f72628","fromNode":"1565ab9da9e931f4","fromSide":"top","toNode":"96be097f8912883e","toSide":"bottom","color":"4"},
+		{"id":"9afdffe042ee9105","fromNode":"1565ab9da9e931f4","fromSide":"bottom","toNode":"2cd8647aa216ae07","toSide":"top","color":"1"},
+		{"id":"9393dfc370893ca0","fromNode":"312241f3784d04e3","fromSide":"left","toNode":"f6eed1bf2036b162","toSide":"bottom","color":"4","label":"Separierbare ODEs"},
+		{"id":"40f87fc782029bed","fromNode":"312241f3784d04e3","fromSide":"top","toNode":"62f43c06e10ba506","toSide":"bottom","color":"4","label":"Exakte ODEs"},
+		{"id":"2592ed5c1cbc70bb","fromNode":"2b0ed299b2982094","fromSide":"top","toNode":"62f43c06e10ba506","toSide":"right","color":"4"},
+		{"id":"124d12da84596658","fromNode":"312241f3784d04e3","fromSide":"right","toNode":"2b0ed299b2982094","toSide":"bottom","color":"4","label":"Exaktisierbare ODEs"},
+		{"id":"32c27385f73c70df","fromNode":"1565ab9da9e931f4","fromSide":"left","toNode":"f938b964fffe2374","toSide":"right","color":"4"},
+		{"id":"fa3c5b83ba9ea0dc","fromNode":"f938b964fffe2374","fromSide":"top","toNode":"7e4685928e75a9a7","toSide":"bottom","color":"4"},
+		{"id":"2a5da7d874cfd30c","fromNode":"7e4685928e75a9a7","fromSide":"right","toNode":"96be097f8912883e","toSide":"left","color":"4"},
+		{"id":"9c9edab75804a857","fromNode":"f938b964fffe2374","fromSide":"left","toNode":"6e8fd50b4f706508","toSide":"right","color":"4","label":"Linear, konst. Koeff."},
+		{"id":"e0350359b395467d","fromNode":"96be097f8912883e","fromSide":"top","toNode":"312241f3784d04e3","toSide":"bottom","color":"4"},
+		{"id":"4510a385a44e9b69","fromNode":"96be097f8912883e","fromSide":"right","toNode":"c1c1ec8461965619","toSide":"left","color":"4"},
+		{"id":"aba57c3af694f799","fromNode":"c1c1ec8461965619","fromSide":"right","toNode":"54fb5fb50dbe9068","toSide":"left","color":"4"},
+		{"id":"6d1a2dc55209fd10","fromNode":"c1c1ec8461965619","fromSide":"top","toNode":"7b8e0cc8a73d5f7b","toSide":"bottom","color":"4"},
+		{"id":"4f002bb0202173bc","fromNode":"7b8e0cc8a73d5f7b","fromSide":"left","toNode":"312241f3784d04e3","toSide":"bottom","color":"4"},
+		{"id":"d819c9d20a8215fe","fromNode":"1565ab9da9e931f4","fromSide":"left","toNode":"9aa783143459fc94","toSide":"right","color":"4"},
+		{"id":"298b2ebf42223724","fromNode":"1565ab9da9e931f4","fromSide":"right","toNode":"166e4903fa38ed0d","toSide":"left","color":"1"},
+		{"id":"16859ba8f57d6018","fromNode":"9aa783143459fc94","fromSide":"bottom","toNode":"9c43d3a2bbeff4ee","toSide":"top","color":"4"}
+	]
+}

@@ -47,5 +47,5 @@ $$y(t)=e^{{Dt}}C=\begin{pmatrix}e^{\lambda_{1}t}\,\,C_{1}\\ \cdot \\\cdot\\\cdot
 >$J\subset \mathbb{R}\qquad X\subset \mathbb{R}^{n}\qquad f:J\times X\to \mathbb{R}^{n}\text{ stetig, LLZ in 2ter Komponente}$
 >$$y'=f(t,y)$$
 
-$$\frac{d}{dt}\phi(t,y(t))=f(t,\phi(t,y(t)))$$
+$$\phi'=f(t,\phi)$$
 

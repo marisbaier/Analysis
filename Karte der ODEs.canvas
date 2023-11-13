@@ -23,7 +23,8 @@
 		{"id":"9c43d3a2bbeff4ee","type":"text","text":"#### Lineare autonome ODS","x":-928,"y":460,"width":269,"height":50,"color":"4"},
 		{"id":"3f0c2d4fa564373b","type":"text","text":"#### Nichtlineare autonome ODS","x":-953,"y":740,"width":320,"height":50,"color":"4"},
 		{"id":"21900e01c22431b8","type":"text","text":"# Variation der Konstanten $m\\gt1$\n\n>[!mot] Setting\n>Wir betrachten $$y^{(n)}(x)+a_{n-1}(x)y^{(n-1)}(x)+...+a_0(x)y(x)=f(x)\\qquad(\\star)$$\n>Sei $(y_1,...,y_n)$ das Fundamentalsystem der hom. Gl.\n\n>[!thm] Lösung\n>    $y_p(x)=\\sum_{i=1}^nc_i(x)y_i(x)$ löst $(\\star)$, falls $$\\begin{pmatrix}y_1(x)&...&y_n(x)\\\\...&...&...\\\\y_1^{(n-1)}(x)&...&y_n^{(n-1)}(x)\\end{pmatrix}\\begin{pmatrix}c_1'(x)\\\\...\\\\c_n'(x)\\end{pmatrix}=\\begin{pmatrix}0\\\\...\\\\f(x)\\end{pmatrix}$$\n>    Es folgt $$y_p(x)=\\sum_{j=1}^n(-1)^{n+j}y_j(x)\\int_{x_0}^x\\frac{W(y_1,...,y_{j-1},y_{j+1},...,y_n)}{W(y_1,...,y_n)}f(s)\\dd s$$","x":-1344,"y":-978,"width":609,"height":610,"color":"4"},
-		{"id":"9aa783143459fc94","type":"text","text":"#### Systeme von ODEs (ODS) $n\\gt1$","x":-682,"y":180,"width":321,"height":50,"color":"4"}
+		{"id":"9aa783143459fc94","type":"text","text":"#### Systeme von ODEs (ODS) $n\\gt1$","x":-682,"y":180,"width":321,"height":50,"color":"4"},
+		{"id":"1e8f6cb562945ed2","x":-1202,"y":-1360,"width":326,"height":283,"color":"3","type":"text","text":"# Wronski-Determinante\nSei $(u_1(t),...,u_n(t))$ ein Tupel von Funktionen. Dann ist deren Wronski-Determinante $$W_{u}(t):=\\begin{vmatrix}u_{1}(t) & ... & u_{n}(t) \\\\ u_{1}'(t) & ... & u_{n}'(t) \\\\ ... & ... & ... \\\\ u_{1}^{(n-1)}(t) & ... & u_{n}^{(n-1)}(t)\\end{vmatrix}$$"}
 	],
 	"edges":[
 		{"id":"8a573485e1f72628","fromNode":"1565ab9da9e931f4","fromSide":"top","toNode":"96be097f8912883e","toSide":"bottom","color":"6"},
@@ -53,6 +54,7 @@
 		{"id":"61dbe1559ad6a63d","fromNode":"9aa783143459fc94","fromSide":"bottom","toNode":"2221a8ceb3a55f87","toSide":"top","color":"4"},
 		{"id":"95f1daa6e7c7f9d1","fromNode":"2221a8ceb3a55f87","fromSide":"bottom","toNode":"3f0c2d4fa564373b","toSide":"right","color":"4"},
 		{"id":"f89bab7b76c2f97f","fromNode":"2221a8ceb3a55f87","fromSide":"bottom","toNode":"9c43d3a2bbeff4ee","toSide":"right","color":"4"},
-		{"id":"f1400aec1f7541dc","fromNode":"6e8fd50b4f706508","fromSide":"top","toNode":"21900e01c22431b8","toSide":"bottom","color":"4"}
+		{"id":"f1400aec1f7541dc","fromNode":"6e8fd50b4f706508","fromSide":"top","toNode":"21900e01c22431b8","toSide":"bottom","color":"4"},
+		{"id":"29f6f588def7edd5","fromNode":"1e8f6cb562945ed2","fromSide":"bottom","toNode":"21900e01c22431b8","toSide":"top","color":"3"}
 	]
 }

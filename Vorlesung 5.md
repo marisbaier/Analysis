@@ -21,3 +21,7 @@ Folgendes ist interessant, weil sich der "e-Ansatz" auf Matrix Systeme und spät
 >
 >BTW ist die Exponentialabbildung glatt:
 >$\text{exp: }M_{n\times n}(\mathbb{K})\circlearrowright\quad\in C^\infty$
+
+---
+>[!info] 
+>$$y'=Ay\quad \Rightarrow\quad y(t)=Ce^{At}$$

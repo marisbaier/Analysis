@@ -44,5 +44,7 @@ $$y(t)=e^{{Dt}}C=\begin{pmatrix}e^{\lambda_{1}t}\,\,C_{1}\\ \cdot \\\cdot\\\cdot
 # Koordinatentransformation
 ---
 >[!mot] Grundsituation
->
+
+$$y'=f(t,y)$$
+$$\frac{d}{dt}\phi(t,y(t))=f(t,\phi(t,y(t)))$$
 

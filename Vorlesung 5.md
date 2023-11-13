@@ -23,6 +23,15 @@ Folgendes ist interessant, weil sich der "e-Ansatz" auf Matrix Systeme und spät
 >BTW ist die Exponentialabbildung glatt:
 >$\text{exp: }M_{n\times n}(\mathbb{K})\circlearrowright\quad\in C^\infty$
 
+# Allgemein
 ---
 >[!thm] 
->$$y'=Ay\quad \Rightarrow\quad y(t)=Ce^{At}$$
+>$$y'=Ay\quad \Rightarrow\quad y(t)=e^{At}C$$
+
+#### A diagonal
+---
+Betrachte $y'=Dy$
+$$y(t)=e^{{Dt}}C=\begin{pmatrix}e^{\lambda_{1}t}\,\,C_{1}\\ \cdot \\\cdot\\\cdot \\e^{\lambda_{1}t}\,\,C_{1}\end{pmatrix}$$
+#### A diagonalisierbar
+---
+$$y(t)=Pe^{{Dt}}C$$

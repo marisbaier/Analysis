@@ -4,7 +4,7 @@ tags:
 ---
 
 ---
->"Eine Exponentialabbildung ist eine Abbildung der Lie-Algebra einer Gruppe auf die Gruppe selbst"
+>"Eine Exponentialabbildung ist eine Abbildung der *Lie-Algebra* einer Gruppe auf die Gruppe selbst"
 >- Muellerol
 
 Folgendes ist interessant, weil sich der "e-Ansatz" auf Matrix Systeme und später auf allgemeine lineare Operatoren verallgemeinern lässt!

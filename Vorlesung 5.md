@@ -4,7 +4,8 @@ tags:
 ---
 
 ---
->"Eine Exponentialabbildung ist eine Abbildung der Lie-Algebra einer Gruppe auf die Gruppe selbst"
+>"Eine Exponentialabbildung ist eine Abbildung der *Lie-Algebra* einer Gruppe auf die Gruppe selbst"
+>$$\exp: \underbrace{LA(G)}_{=T_\mathbb{1}G}\to G$$
 >- Muellerol
 
 Folgendes ist interessant, weil sich der "e-Ansatz" auf Matrix Systeme und später auf allgemeine lineare Operatoren verallgemeinern lässt!
@@ -21,3 +22,26 @@ Folgendes ist interessant, weil sich der "e-Ansatz" auf Matrix Systeme und spät
 >
 >BTW ist die Exponentialabbildung glatt:
 >$\text{exp: }M_{n\times n}(\mathbb{K})\circlearrowright\quad\in C^\infty$
+
+# Allgemein
+---
+>[!thm] Lineare Autonome Systeme
+>$$y'=Ay\quad \Rightarrow\quad y(t)=e^{At}C$$
+
+#### A diagonal
+---
+Betrachte $y'=Dy$
+$$y(t)=e^{{Dt}}C=\begin{pmatrix}e^{\lambda_{1}t}\,\,C_{1}\\ \cdot \\\cdot\\\cdot \\e^{\lambda_{1}t}\,\,C_{1}\end{pmatrix}$$
+#### A diagonalisierbar
+---
+>[!thm] Betrachte $A=PDP^{{-1}}$
+>$$y(t)=Pe^{{Dt}}C$$
+>>[!bew]- Beweis:
+>>Setze $y(t)=Pe^{{Dt}}C$
+>>Dann $y'(t)=PDe^{{Dt}}C\stackrel{!}{=}Ay(t)=APe^{Dt}C=PDP^{-1}Pe^{Dt}C=PDe^{Dt}C$
+
+
+# Koordinatentransformation
+---
+>[!mort] Grundsituation
+>

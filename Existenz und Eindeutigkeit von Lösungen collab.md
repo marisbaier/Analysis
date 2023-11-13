@@ -7,7 +7,7 @@ module: P3.3
 aliases:
 ---
 modul: [[P3.3 Analysis III]]
-# Existenz, Eindeutigkeit, Stabilität von Lösungen
+# Existenz und Eindeutigkeit von Lösungen
 
 >[!exp] Gegenbeispiel
 >- Fundamentalsatz: $f$ nicht stetig $\cd$ Existenz

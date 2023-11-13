@@ -25,7 +25,7 @@ Folgendes ist interessant, weil sich der "e-Ansatz" auf Matrix Systeme und spät
 
 # Allgemein
 ---
->[!thm] 
+>[!thm] Lineare Autonome Systeme
 >$$y'=Ay\quad \Rightarrow\quad y(t)=e^{At}C$$
 
 #### A diagonal
@@ -34,4 +34,14 @@ Betrachte $y'=Dy$
 $$y(t)=e^{{Dt}}C=\begin{pmatrix}e^{\lambda_{1}t}\,\,C_{1}\\ \cdot \\\cdot\\\cdot \\e^{\lambda_{1}t}\,\,C_{1}\end{pmatrix}$$
 #### A diagonalisierbar
 ---
-$$y(t)=Pe^{{Dt}}C$$
+>[!thm] Betrachte $A=PDP^{{-1}}$
+>$$y(t)=Pe^{{Dt}}C$$
+>>[!bew]- Beweis:
+>>Setze $y(t)=Pe^{{Dt}}C$
+>>Dann $y'(t)=PDe^{{Dt}}C\stackrel{!}{=}Ay(t)=APe^{Dt}C=PDP^{-1}Pe^{Dt}C=PDe^{Dt}C$
+
+
+# Koordinatentransformation
+---
+>[!mort] Grundsituation
+>

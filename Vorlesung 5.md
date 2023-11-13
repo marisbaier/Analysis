@@ -43,5 +43,6 @@ $$y(t)=e^{{Dt}}C=\begin{pmatrix}e^{\lambda_{1}t}\,\,C_{1}\\ \cdot \\\cdot\\\cdot
 
 # Koordinatentransformation
 ---
->[!mort] Grundsituation
+>[!mot] Grundsituation
 >
+

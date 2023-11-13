@@ -5,6 +5,7 @@ tags:
 
 ---
 >"Eine Exponentialabbildung ist eine Abbildung der *Lie-Algebra* einer Gruppe auf die Gruppe selbst"
+>$$\exp: \underbrace{LA(G)}_{=T_\mathbb{1}G}\to G$$
 >- Muellerol
 
 Folgendes ist interessant, weil sich der "e-Ansatz" auf Matrix Systeme und später auf allgemeine lineare Operatoren verallgemeinern lässt!
@@ -23,5 +24,5 @@ Folgendes ist interessant, weil sich der "e-Ansatz" auf Matrix Systeme und spät
 >$\text{exp: }M_{n\times n}(\mathbb{K})\circlearrowright\quad\in C^\infty$
 
 ---
->[!info] 
+>[!thm] 
 >$$y'=Ay\quad \Rightarrow\quad y(t)=Ce^{At}$$

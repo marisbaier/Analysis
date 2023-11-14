@@ -57,3 +57,40 @@ dies ist symmetrisch in $i,j$! Insbesondere ist $\mathrm{II}$ eine symmetrische 
 >2. $X\in\mathbb{R}^{2}$ heißt eine **Hauptkrümmungsrichtung** zu $F$ in $u$, wenn $X$ Eigenvektor von $A_{u}$ ist und $\mathrm{I}_{u}(X,X)=1$, d.h. $\left\lVert dF_{u}(X)\right\rVert=1$
 >3. Die **Gauß-Krümmung** zu $F$ in $u$ ist $$\kappa(u):=\kappa_{1}(u)\cdot\kappa_{2}(u)=\det A_{u}=\frac{\det h(u)}{\det g(u)}$$
 >4. Die **mittlere Krümmung** von $F$ in $u$ ist $$H(u):=\frac{1}{2}(\kappa_{1}(u)+\kappa_{2}(u))=\frac{1}{2}\text{tr }A_{u}=\frac{1}{2}\text{tr}(g(u)^{-1}h(u))$$
+
+>[!bem] Bemerkung 5.10
+>1. Sei $u\in U$. Falls $\kappa_{1}(u)\ne\kappa_{2}(u)$, dann sind die zugehörigen Hauptkrümmungsrichtungn orthogonal bzgl. $I_{u}$.
+>2. $\kappa_{1}(u),\kappa_{2}(u)$ sind das $\max$/$\min$ (oder umgekehrt) der Menge $\{\mathrm{II}_{u}(X,X)\vert X\in\mathbb{R}^{2},\mathrm{I}_{u}(X,X)=1\}$
+>3. Aus (2) folgt mit 5.6: 
+>   $\kappa_{1}(u),\kappa_{2}(u)$ sind $\max$/$\min$ der ebenen Krümmungen $\kappa(0)$ von Normalschnitten $c$ zu $F$ in $u$. Und: $\kappa(u)$ ist das Produkt dieser ebenen Krümmungen von Normalschnitten, $H(u)$ deren Mittelwert.
+
+>[!exp] Beispiel 5.11: Katenoid
+>Wir betrachten $$F:\mathbb{R}^{2}\ni(s,t)\mapsto(\cosh s\cos t,\cosh s\sin t,s)\in\mathbb{R}^{3}$$, eine Drehfläche mit Profilkurve $s\mapsto(\cosh s,0,s)$.
+>**1. Fundamentalmatrix**: $$g(s,t)=\begin{pmatrix}\cosh^{2}s & 0 \\ 0 & \cosh^{2}s\end{pmatrix}$$
+>**Gauß-Abbildung**: $$N(s,t)=\frac{1}{\cosh s}\begin{pmatrix}-\cos t \\ -\sin t \\ \sinh s\end{pmatrix}$$
+>![[Pasted image 20231114194417.png|300]]
+>**2. Fundamentalmatrix**: $$h(s,t)=\begin{pmatrix}-1 & 0 \\ 0 & 1\end{pmatrix}$$
+>**Gauß-Krümmung**: $$\kappa(s,t)=-\frac{1}{\cosh^{4}s}\lt0\quad\forall(s,t),\qquad s=0\rightsquigarrow|\cdot|\text{ max.}$$
+>**Weingarten-Abbildung**: $A_{(s,t)}$ hat Matrix $$\begin{pmatrix}-\frac{1}{\cosh^{2}s} & 0 \\ 0 & \frac{1}{\cosh^{2}s}\end{pmatrix}$$
+>**Mittlere Krümmung**: $$H(s,t)=0$$($F$ ist **Minimalfläche**)
+>**Hauptkrümmungen**: $$\{\kappa_{1}(s,t),\kappa_{2}(s,t)\}=\left\{-\frac{1}{\cosh^{2}s},\frac{1}{\cosh^{2}s}\right\}$$
+>**Hauptkrümmungsrichtungen**: $$\{\pm\frac{e_{1}}{\cosh s},\pm\frac{e_{2}}{\cosh s}\}$$
+>Nach Anwendung von $dF_{(s,t)}$ werden die Hauptkrümmungsrichtungen zu $\pm\frac{\partial_{s}F(s,t)}{\left\lVert\cdot\right\rVert}$ (tangential an die $s$-Linien, negativ gekrümmt bzgl. $N$) bzw.$\pm\frac{\partial_{t}F(s,t)}{\left\lVert\cdot\right\rVert}$ (tangential an die $t$-Linien, positiv gekrümmt bzgl. $N$)
+
+>[!bem] Bemerkung 5.12: Verhalten unter Umparametrisierung
+>Sei $\tilde U\subset\mathbb{R}^{2}$ offen, $\Phi:\tilde U\rightarrow U$ ein Diffeomorphismus, $\tilde F=F\circ\Phi:\tilde U\rightarrow\mathbb{R}^{3}$. Sei außerdem $U$ zusammenhöngend und sei $$\sigma:=\text{sgn}(\det(d\Phi_{\tilde u}))=\text{const.}\in\{\pm1\}$$
+>Dann gilt:
+>1. $$\begin{align*}
+&\partial_{1}\tilde F(\tilde u)\tilde\partial_{2}\tilde F(\tilde u)=\det(d\Phi_{\tilde u})\cdot(\partial_{1}F\times\partial_{2}F)(\Phi(\tilde u))\\[12pt]
+&\tilde N(\tilde u)=\sigma\cdot N(\Phi(\tilde u))
+\end{align*}$$
+>2. $$\begin{align*}
+&\tilde{\mathrm{II}}_{\tilde u}(X,Y)=\sigma\cdot\mathrm{II}_{\Phi(\tilde u)}(d\Phi_{\tilde u}(X),d\Phi_{\tilde u}(Y))\\[12pt]
+&\tilde h(\tilde u)=\sigma\cdot\Phi'(\tilde u)^{T}\cdot h(\Phi(\tilde u))\cdot\Phi'(\tilde u)
+\end{align*}$$
+>3. $$\tilde\kappa(\tilde u)=\kappa(\Phi(\tilde u))$$
+>4. $$\tilde A_{\tilde u}=\sigma\cdot d\Phi_{\tilde u}^{-1}\circ A_{\Phi(\tilde u)}\circ d\Phi_{\tilde u}$$
+>5. $$\begin{align*}
+&\tilde H(\tilde u)=\sigma\cdot H(\Phi(\tilde u))\\[12pt]
+&\tilde \kappa_{i}(\tilde u)=\sigma\cdot\kappa_{i}(\Phi(\tilde u)),\qquad i=1,2
+\end{align*}$$

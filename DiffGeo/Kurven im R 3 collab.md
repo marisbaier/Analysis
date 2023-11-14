@@ -4,7 +4,8 @@ tags:
   - concept
   - status/todo
 module: M18
-aliases:
+aliases: 
+mathLink: Kurven im $\mathbb{R}^3$
 ---
 modul: [[M13 Differentialgeometrie]]
 # Kurven im $\mathbb{R}^3$

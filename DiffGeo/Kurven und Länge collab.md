@@ -2,7 +2,6 @@
 time: 17.10.2023 11:31
 tags:
   - concept
-  - status/todo
 module: M13
 aliases:
 ---

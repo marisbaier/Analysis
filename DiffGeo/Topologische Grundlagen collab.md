@@ -2,7 +2,6 @@
 time: 26.11.2023 23:26
 tags:
   - concept
-  - status/todo
 module: M18
 aliases:
 ---

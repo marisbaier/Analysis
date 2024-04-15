@@ -2,7 +2,6 @@
 time: 04.11.2023 19:22
 tags:
   - concept
-  - status/todo
 module: M18
 aliases: 
 mathLink: Kurven im $\mathbb{R}^3$

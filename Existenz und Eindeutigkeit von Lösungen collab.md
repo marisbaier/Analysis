@@ -2,7 +2,6 @@
 time: 19.10.2023 13:20
 tags:
   - concept
-  - status/todo
 module: P3.3
 aliases:
 ---
